@@ -17,22 +17,15 @@ public class CupomFiscal {
 
 	public static void exercicio01() {
 
-		/*System.out.println(
-			NOME_LOJA + "\n" +
-			LOGRADOURO + ", " + NUMERO + " " + COMPLEMENTO + "\n" +
-			BAIRRO + " - " + MUNICIPIO + " - " + ESTADO + "\n" +
-			"CEP:" + CEP + " Tel " + TELEFONE + "\n" +
-			OBSERVACAO + "\n" +
-			"CNPJ: " + CNPJ + "\n" +
-			"IE: " + INSCRICAO_ESTADUAL
-		);*/
-		System.out.println(NOME_LOJA);
-		System.out.println(LOGRADOURO + ", " + NUMERO + " " + COMPLEMENTO);
-		System.out.println(BAIRRO + " - " + MUNICIPIO + " - " + ESTADO);
-		System.out.println("CEP:" + CEP + " Tel " + TELEFONE);
-		System.out.println(OBSERVACAO);
-		System.out.println("CNPJ: " + CNPJ);
-		System.out.println("IE: " + INSCRICAO_ESTADUAL);
+		String saida = NOME_LOJA + "\n";
+		saida += String.format("%s, %d %s\n", LOGRADOURO, NUMERO, COMPLEMENTO);
+		saida += String.format("%s - %s - %s\n", BAIRRO, MUNICIPIO, ESTADO);
+		saida += String.format("CEP:%s Tel %s\n", CEP, TELEFONE);
+		saida += OBSERVACAO + "\n";
+		saida += String.format("CNPJ: %s\n", CNPJ);
+		saida += String.format("IE: %s", INSCRICAO_ESTADUAL);
+		saida = saida.replace("\n", "" + System.lineSeparator() + "");
+		System.out.println(saida);
 
 	}
 
