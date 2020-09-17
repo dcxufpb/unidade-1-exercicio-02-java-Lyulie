@@ -68,7 +68,7 @@ public class TestExercicio {
 		CupomFiscal.NUMERO = 44;
 		CupomFiscal.COMPLEMENTO = "ao lado do coqueiro";
 		CupomFiscal.BAIRRO = "Mandacaru";
-		CupomFiscal.MUNICIPIO = "João Pessoa";
+		CupomFiscal.MUNICIPIO = "Joao Pessoa";
 		CupomFiscal.ESTADO = "PB";
 		CupomFiscal.CEP = "58038-000";
 		CupomFiscal.TELEFONE = "(83) 9444-7777";
@@ -80,7 +80,7 @@ public class TestExercicio {
 		rodarTestarOutput(
 			"Brinquedos ltda" + BREAK +
 			"Rua da guia, 44 ao lado do coqueiro" + BREAK +
-			"Mandacaru - João Pessoa - PB" + BREAK +
+			"Mandacaru - Joao Pessoa - PB" + BREAK +
 			"CEP:58038-000 Tel (83) 9444-7777" + BREAK +
 			"Loja 4" + BREAK +
 			"CNPJ: 42.591.651/0797-34" + BREAK +
